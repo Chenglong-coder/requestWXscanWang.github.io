@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <title>扫描二维码</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=Yes" />
+    <script src="~/js/jquery1.7.2.js"></script>
+    <script src="https://res.wx.qq.com/open/js/jweixin-1.2.0.js"></script>
+</head>
+<body onload="load()">
+
+<a href="http://sao315.com/w/api/saoyisao?redirect_uri=https://chenglong-coder.github.io/scanQRwang.github.io/" id="target">扫一扫</a>
+</body>
+</html>
+<script>
+function load(){  
+    document.getElementById("target").click();  
+} 
+
+if (location.href.indexOf("qrresult=")>-1){
+    self.location='https://chenglong-coder.github.io/scan.github.io/';}
+</script>
